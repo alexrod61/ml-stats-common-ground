@@ -1,0 +1,36 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Machine Learning and Statistics: A Common Ground"
+  author: "G. Alexi Rodríguez-Arelis"
+  date: today
+  abstract: "This book aims to set a common ground between Machine Learning and Statistics regarding regression techniques, using `Python` and `R`, under two perspectives: inference and prediction."
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  license: "CC BY"
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: lux
+    toc: true
+    toc-depth: 3
+    toc-title: Index
+    number-sections: true
+    number-depth: 3
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
