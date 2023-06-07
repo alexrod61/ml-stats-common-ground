@@ -8,3 +8,77 @@ See @knuth84 for additional discussion of literate programming.
 1 + 1
 ```
 
+
+```{r}
+#| label: read-data
+#| echo: true
+#| message: false
+#| cache: true
+lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')
+```
+
+```{r}
+#| label: wrangling
+#| echo: true
+#| message: false
+library(dplyr)
+library(knitr)
+lemur_data <- lemurs %>% 
+  filter(taxon == "ECOL",
+         sex == "M",
+         age_category == "adult") %>% 
+  select(c(age_at_wt_mo, weight_g)) %>% 
+  rename(Age = age_at_wt_mo, 
+         Weight = weight_g)
+kable(head(lemur_data))
+```
+
+
+```{python}
+#| label: modelling
+#| echo: true
+#| message: false
+lemur_data_py = r.lemur_data
+lemur_data_py
+
+import statsmodels.api as sm
+y = lemur_data_py[["Weight"]]
+x = lemur_data_py[["Age"]]
+x = sm.add_constant(x)
+mod = sm.OLS(y, x).fit()
+lemur_data_py["Predicted"] = mod.predict(x)
+lemur_data_py["Residuals"] = mod.resid
+```
+
+::: panel-tabset
+## `R`
+
+``` r
+#| echo: true
+fizz_buzz <- function(fbnums = 1:50) {
+  output <- dplyr::case_when(
+    fbnums %% 15 == 0 ~ "FizzBuzz",
+    fbnums %% 3 == 0 ~ "Fizz",
+    fbnums %% 5 == 0 ~ "Buzz",
+    TRUE ~ as.character(fbnums)
+  )
+  print(output)
+}
+
+1 + 2
+```
+
+## `Python`
+
+``` python
+def fizz_buzz(num):
+  if num % 15 == 0:
+    print("FizzBuzz")
+  elif num % 5 == 0:
+    print("Buzz")
+  elif num % 3 == 0:
+    print("Fizz")
+  else:
+    print(num)
+```
+:::

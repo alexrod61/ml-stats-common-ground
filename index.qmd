@@ -6,10 +6,5 @@ As a Data Science educator, I view this field as a substantial synergy between M
 
 ## Audience
 
-## How this Book is Structured 
+## How this Book is Structured
 
-## About the Author
-
-# Acknowledgments {.appendix}
-
-A

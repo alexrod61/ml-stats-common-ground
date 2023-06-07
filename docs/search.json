@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Machine Learning and Statistics: A Common Ground",
     "section": "",
-    "text": "Preface\nThroughout my journey as a postdoctoral fellow in the Master of Data Science (MDS) at the University of British Columbia, I became aware of the fascinating overlap between Machine Learning and Statistics. Many Data Science students usually come across common Machine Learning/Statistics concepts or ideas that might only differ in names. For instance, simple terms such as weights in supervised learning (and their equivalent statistical counterpart as regression coefficients) might be misleading for students starting their Data Science formation. On the other hand, from an instructor’s perspective in a Data Science program that subsets its courses in Machine Learning in Python and Statistics in R, regression courses in R also demand the inclusion of Python-related packages as alternative tools. In my MDS teaching experience, this is especially critical for students whose career plans lean towards industry where Python is more heavily used.\nAs a Data Science educator, I view this field as a substantial synergy between Machine Learning and Statistics. Nevertheless, I believe there are still many gaps to be addressed between both disciplines. Thus, closing these critical gaps is imperative in a domain with accelerated growth, such as Data Science. The MDS Stat-ML dictionary inspired me to write this book. It basically consists of common ground between foundational supervised learning models from Machine Learning and regression models commonly used in Statistics. I strive to explore common modelling approaches as a primary step while highlighting different terminology found in both fields. Furthermore, this discussion is not limited to a simple conceptual exploration. Hence, the second step is hands-on practice via the corresponding Python packages for Machine Learning and R for Statistics.\nA"
+    "text": "Preface\nThroughout my journey as a postdoctoral fellow in the Master of Data Science (MDS) at the University of British Columbia, I became aware of the fascinating overlap between Machine Learning and Statistics. Many Data Science students usually come across common Machine Learning/Statistics concepts or ideas that might only differ in names. For instance, simple terms such as weights in supervised learning (and their equivalent statistical counterpart as regression coefficients) might be misleading for students starting their Data Science formation. On the other hand, from an instructor’s perspective in a Data Science program that subsets its courses in Machine Learning in Python and Statistics in R, regression courses in R also demand the inclusion of Python-related packages as alternative tools. In my MDS teaching experience, this is especially critical for students whose career plans lean towards industry where Python is more heavily used.\nAs a Data Science educator, I view this field as a substantial synergy between Machine Learning and Statistics. Nevertheless, I believe there are still many gaps to be addressed between both disciplines. Thus, closing these critical gaps is imperative in a domain with accelerated growth, such as Data Science. The MDS Stat-ML dictionary inspired me to write this book. It basically consists of common ground between foundational supervised learning models from Machine Learning and regression models commonly used in Statistics. I strive to explore common modelling approaches as a primary step while highlighting different terminology found in both fields. Furthermore, this discussion is not limited to a simple conceptual exploration. Hence, the second step is hands-on practice via the corresponding Python packages for Machine Learning and R for Statistics."
   },
   {
     "objectID": "index.html#audience",
@@ -21,23 +21,16 @@
     "text": "How this Book is Structured"
   },
   {
-    "objectID": "index.html#about-the-author",
-    "href": "index.html#about-the-author",
-    "title": "Machine Learning and Statistics: A Common Ground",
-    "section": "About the Author",
-    "text": "About the Author"
-  },
-  {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "\n1  Introduction\n",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\nlemurs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')\n\n\nlibrary(dplyr)\nlibrary(knitr)\nlemur_data &lt;- lemurs %&gt;% \n  filter(taxon == \"ECOL\",\n         sex == \"M\",\n         age_category == \"adult\") %&gt;% \n  select(c(age_at_wt_mo, weight_g)) %&gt;% \n  rename(Age = age_at_wt_mo, \n         Weight = weight_g)\nkable(head(lemur_data))\n\n\n\nAge\nWeight\n\n\n\n129.90\n2805\n\n\n132.10\n3001\n\n\n140.32\n2429\n\n\n157.94\n2597\n\n\n164.58\n2497\n\n\n184.18\n2225\n\n\n\n\n\n\nlemur_data_py = r.lemur_data\nlemur_data_py\n\n         Age  Weight\n0     129.90  2805.0\n1     132.10  3001.0\n2     140.32  2429.0\n3     157.94  2597.0\n4     164.58  2497.0\n...      ...     ...\n1302   59.77  2280.0\n1303   61.08  2420.0\n1304   61.15  2460.0\n1305   61.25  2440.0\n1306   61.68  2120.0\n\n[1307 rows x 2 columns]\n\n\nimport statsmodels.api as sm\ny = lemur_data_py[[\"Weight\"]]\nx = lemur_data_py[[\"Age\"]]\nx = sm.add_constant(x)\nmod = sm.OLS(y, x).fit()\nlemur_data_py[\"Predicted\"] = mod.predict(x)\nlemur_data_py[\"Residuals\"] = mod.resid\n\n\n\nR\nPython\n\n\n\n#| echo: true\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\n1 + 2\n\n\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "\n2  Summary\n",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   },
