@@ -8,6 +8,12 @@ See @knuth84 for additional discussion of literate programming.
 1 + 1
 ```
 
+$$
+\begin{equation}
+a = 3
+\end{equation}
+$$ {#eq-ols}
+
 
 ```{r}
 #| label: read-data
@@ -32,7 +38,6 @@ lemur_data <- lemurs %>%
          Weight = weight_g)
 kable(head(lemur_data))
 ```
-
 
 ```{python}
 #| label: modelling
