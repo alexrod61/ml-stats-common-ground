@@ -6,7 +6,7 @@ As a Data Science educator, I view this field as a substantial synergy between M
 
 ## Audience and Scope
 
-This textbook mainly focuses on regression analysis and its supervised learning counterpart. Thus, it is not introductory Statistics and Machine Learning material. **Instead**, the following topics are suggested as prerequisites:
+This book mainly focuses on regression analysis and its supervised learning counterpart. Thus, it is not introductory Statistics and Machine Learning material. Instead, the following topics are suggested as prerequisites:
 
 - **Mutivariable Differential Calculus and Linear Algebra.** Certain sections of each chapter pertain to modelling estimation. Therefore, topics such as partial derivatives and matrix algebra are a great asset. You can find helpful learning resources on the [MDS webpage](https://ubc-mds.github.io/resources_pages/learning_resources/).
 - **Basic `R` programming.** Knowledge of data wrangling and plotting through `R` [{tidyverse}](https://www.tidyverse.org) is recommended for hands-on practice via the examples provided in each one of the chapters of this book. The MDS courses [DSCI 523 (Programming for Data Manipulation)](https://github.com/UBC-MDS/DSCI_523_r-prog) and [DSCI 531 (Data Visualization I)](https://github.com/UBC-MDS/DSCI_531_viz-1) are ideal examples of this prerequisite.

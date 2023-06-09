@@ -36,6 +36,8 @@ format:
     theme:
       light: flatly
       dark: darkly
+    fontsize: 1.1em
+    linestretch: 1.7
     toc: true
     toc-depth: 3
     toc-title: On this page
