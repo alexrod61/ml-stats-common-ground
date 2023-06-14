@@ -17,3 +17,10 @@ This book mainly focuses on regression analysis and its supervised learning coun
 - **Foundations of feature and model selection.** This prerequisite also relates to Machine Learning and its corresponding prediction paradigm. Basic knowledge of prediction accuracy and variable selection tools is recommended. The MDS course [DSCI 573 (Feature and Model Selection)](https://github.com/UBC-MDS/DSCI_573_feat-model-select) is an ideal example of this prerequisite.
 
 ## How this Book is Structured
+
+
+[![](https://mermaid.ink/img/pako:eNpdUctuwjAQ_JWVTyBR9R5VlaA9FoEKveWyOJvEarLrrm2kFPHvNY_QFp92Z8aj0c7BWKnIFKZ3XPXoSwZQkTiZ4HR6WgBW6hrH4bIAvAk30LoQRYcRKwpnhSc1Qo0PO5HP6cisxacO1QWMTnhEARbqogst-AsPPgy2lU6aATDFVhS2wgMs0jdef71TIFTbjh4rBqprstHtmUJ42unjM3IFNWFMSuGPbp6i9DmABat0F-Qj_Eov7-Ws2RNEsi27r3Qv2ETFSE228x0yO27-83NtUk8cId_T39itSHczWhPDKaxHTzqCS9IeXWVmpr9OhTmcyNLElnoqTZHHimpMXSxNyccszdeSzcDWFFETzUzyVQ736rBR7E1RYxcySpXLfS0vVZ8bP_4AzvShBg?type=png)](https://mermaid.live/edit#pako:eNpdUctuwjAQ_JWVTyBR9R5VlaA9FoEKveWyOJvEarLrrm2kFPHvNY_QFp92Z8aj0c7BWKnIFKZ3XPXoSwZQkTiZ4HR6WgBW6hrH4bIAvAk30LoQRYcRKwpnhSc1Qo0PO5HP6cisxacO1QWMTnhEARbqogst-AsPPgy2lU6aATDFVhS2wgMs0jdef71TIFTbjh4rBqprstHtmUJ42unjM3IFNWFMSuGPbp6i9DmABat0F-Qj_Eov7-Ws2RNEsi27r3Qv2ETFSE228x0yO27-83NtUk8cId_T39itSHczWhPDKaxHTzqCS9IeXWVmpr9OhTmcyNLElnoqTZHHimpMXSxNyccszdeSzcDWFFETzUzyVQ736rBR7E1RYxcySpXLfS0vVZ8bP_4AzvShBg)
+
+
+
+

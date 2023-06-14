@@ -33,11 +33,11 @@ bibliography: references.bib
 
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
-    fontsize: 1.1em
-    linestretch: 1.7
+    theme: flatly
+    mermaid: 
+      theme: neutral
+    fontsize: 1.3em
+    linestretch: 1.8
     toc: true
     toc-depth: 3
     toc-title: On this page
@@ -51,6 +51,11 @@ format:
     code-link: true
     html-math-method: mathjax
     linkcolor: rgb(214, 122, 127)
+    grid:
+      sidebar-width: 300px
+      body-width: 1700px
+      margin-width: 350px
+      gutter-width: 1.5em
 
 editor: visual
 

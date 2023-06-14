@@ -21,11 +21,11 @@
     "text": "How this Book is Structured"
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
+    "objectID": "intro.html#python",
+    "href": "intro.html#python",
     "title": "\n1  Introduction\n",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\\[\n\\begin{equation}\na = 3\n\\end{equation}\n\\tag{1.1}\\]\n\nlemurs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')\n\n\nlibrary(dplyr)\nlibrary(knitr)\nlemur_data &lt;- lemurs %&gt;% \n  filter(taxon == \"ECOL\",\n         sex == \"M\",\n         age_category == \"adult\") %&gt;% \n  select(c(age_at_wt_mo, weight_g)) %&gt;% \n  rename(Age = age_at_wt_mo, \n         Weight = weight_g)\nkable(head(lemur_data))\n\n\n\nAge\nWeight\n\n\n\n129.90\n2805\n\n\n132.10\n3001\n\n\n140.32\n2429\n\n\n157.94\n2597\n\n\n164.58\n2497\n\n\n184.18\n2225\n\n\n\n\n\n\nlemur_data_py = r.lemur_data\nlemur_data_py\n\n         Age  Weight\n0     129.90  2805.0\n1     132.10  3001.0\n2     140.32  2429.0\n3     157.94  2597.0\n4     164.58  2497.0\n...      ...     ...\n1302   59.77  2280.0\n1303   61.08  2420.0\n1304   61.15  2460.0\n1305   61.25  2440.0\n1306   61.68  2120.0\n\n[1307 rows x 2 columns]\n\n\nimport statsmodels.api as sm\ny = lemur_data_py[[\"Weight\"]]\nx = lemur_data_py[[\"Age\"]]\nx = sm.add_constant(x)\nmod = sm.OLS(y, x).fit()\nlemur_data_py[\"Predicted\"] = mod.predict(x)\nlemur_data_py[\"Residuals\"] = mod.resid\n\n\n\nR\nPython\n\n\n\n#| echo: true\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\n1 + 2\n\n\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "section": "\n1.1 Python\n",
+    "text": "1.1 Python\n\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)\n\n\n\n\n\n\nImportant\n\n\n\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "summary.html",
@@ -40,5 +40,12 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "\n1  Introduction\n",
+    "section": "",
+    "text": "This is a book created from markdown and executable code. See Knuth (1984) for additional discussion of literate programming.\nFor further reference, you can see Figure 1.1\n\n\n\n\n\nFigure 1.1: Data Science workflow for inferential and predictive inquiries in regression analysis and supervised learning, respectively.\n\n\n1 + 1\n\n[1] 2\n\n\n\\[\n\\begin{equation}\na = 3\n\\end{equation}\n\\tag{1.1}\\]\n\nlemurs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')\n\n\nlibrary(dplyr)\nlibrary(knitr)\nlemur_data &lt;- lemurs %&gt;% \n  filter(taxon == \"ECOL\",\n         sex == \"M\",\n         age_category == \"adult\") %&gt;% \n  select(c(age_at_wt_mo, weight_g)) %&gt;% \n  rename(Age = age_at_wt_mo, \n         Weight = weight_g)\nkable(head(lemur_data))\n\n\n\nAge\nWeight\n\n\n\n129.90\n2805\n\n\n132.10\n3001\n\n\n140.32\n2429\n\n\n157.94\n2597\n\n\n164.58\n2497\n\n\n184.18\n2225\n\n\n\n\n\n\nlemur_data_py = r.lemur_data\nlemur_data_py\n\n         Age  Weight\n0     129.90  2805.0\n1     132.10  3001.0\n2     140.32  2429.0\n3     157.94  2597.0\n4     164.58  2497.0\n...      ...     ...\n1302   59.77  2280.0\n1303   61.08  2420.0\n1304   61.15  2460.0\n1305   61.25  2440.0\n1306   61.68  2120.0\n\n[1307 rows x 2 columns]\n\n\nimport statsmodels.api as sm\ny = lemur_data_py[[\"Weight\"]]\nx = lemur_data_py[[\"Age\"]]\nx = sm.add_constant(x)\nmod = sm.OLS(y, x).fit()\nlemur_data_py[\"Predicted\"] = mod.predict(x)\nlemur_data_py[\"Residuals\"] = mod.resid\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
