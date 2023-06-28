@@ -2,18 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alexrod61.github.io/ml-stats-common-ground/index.html</loc>
-    <lastmod>2023-06-14T05:36:36.610Z</lastmod>
+    <lastmod>2023-06-28T01:12:30.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/audience-scope.html</loc>
+    <lastmod>2023-06-28T01:12:30.270Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/book-structure.html</loc>
+    <lastmod>2023-06-28T01:12:30.274Z</lastmod>
   </url>
   <url>
     <loc>https://alexrod61.github.io/ml-stats-common-ground/intro.html</loc>
-    <lastmod>2023-06-14T06:16:53.505Z</lastmod>
+    <lastmod>2023-06-28T01:12:30.277Z</lastmod>
   </url>
   <url>
-    <loc>https://alexrod61.github.io/ml-stats-common-ground/summary.html</loc>
-    <lastmod>2023-06-14T06:00:27.437Z</lastmod>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/continuous-outcomes.html</loc>
+    <lastmod>2023-06-28T01:12:30.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/ols-regression.html</loc>
+    <lastmod>2023-06-28T01:12:30.285Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/discrete-outcomes.html</loc>
+    <lastmod>2023-06-28T01:12:30.287Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/binary-logistic-regression.html</loc>
+    <lastmod>2023-06-28T01:12:30.289Z</lastmod>
   </url>
   <url>
     <loc>https://alexrod61.github.io/ml-stats-common-ground/references.html</loc>
-    <lastmod>2023-06-14T05:36:36.621Z</lastmod>
+    <lastmod>2023-06-28T01:12:30.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexrod61.github.io/ml-stats-common-ground/dictionary.html</loc>
+    <lastmod>2023-06-28T01:12:30.294Z</lastmod>
   </url>
 </urlset>

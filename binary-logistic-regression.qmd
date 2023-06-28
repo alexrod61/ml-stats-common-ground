@@ -1,0 +1,7 @@
+# Binary Logistic Regression {#sec-binary}
+
+We will proceed with the first <span style="color: purple;">generalized linear model</span> (<span style="color: purple;">GLM</span>), binary logistic regression. 
+
+```{r}
+1 + 1
+```

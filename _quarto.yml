@@ -10,9 +10,18 @@ book:
   abstract: "This book aims to set a common ground between Machine Learning and Statistics regarding regression techniques, using `Python` and `R`, under two perspectives: *inference* and *prediction*."
   chapters:
     - index.qmd
+    - audience-scope.qmd
+    - book-structure.qmd
     - intro.qmd
-    - summary.qmd
+    - part: continuous-outcomes.qmd
+      chapters:
+        - ols-regression.qmd
+    - part: discrete-outcomes.qmd
+      chapters:
+        - binary-logistic-regression.qmd
     - references.qmd
+  appendices: 
+    - dictionary.qmd
   navbar:
     search: true
     right:
@@ -22,12 +31,13 @@ book:
   page-footer: 
     left: |
       Copyright 2023, G. Alexi Rodríguez-Arelis
-  back-to-top-navigation: true
+  page-navigation: true
   site-url: https://alexrod61.github.io/ml-stats-common-ground/
   repo-url: https://github.com/alexrod61/ml-stats-common-ground
   repo-branch: main
   repo-actions: [issue]
   sharing: [twitter, facebook, linkedin]
+  back-to-top-navigation: true
 
 bibliography: references.bib
 
@@ -36,13 +46,11 @@ format:
     theme: flatly
     mermaid: 
       theme: neutral
-    fontsize: 1.3em
+    fontsize: 1.25em
     linestretch: 1.8
     toc: true
     toc-depth: 3
     toc-title: On this page
-    number-sections: true
-    number-depth: 3
     smooth-scroll: true
     link-external-icon: true
     link-external-newwindow: true
@@ -51,9 +59,11 @@ format:
     code-link: true
     html-math-method: mathjax
     linkcolor: rgb(214, 122, 127)
+    number-sections: true
+    number-depth: 3
     grid:
       sidebar-width: 300px
-      body-width: 1700px
+      body-width: 1800px
       margin-width: 350px
       gutter-width: 1.5em
 

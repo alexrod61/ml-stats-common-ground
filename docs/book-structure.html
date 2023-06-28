@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="G. Alexi Rodríguez-Arelis">
-<meta name="dcterms.date" content="2023-06-27">
 
-<title>Machine Learning and Statistics: A Common Ground</title>
+<title>Machine Learning and Statistics: A Common Ground - How this Book is Structured</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./audience-scope.html" rel="next">
+<link href="./intro.html" rel="next">
+<link href="./audience-scope.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -128,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./book-structure.html">How this Book is Structured</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -162,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./book-structure.html" class="sidebar-item-text sidebar-link">
+  <a href="./book-structure.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">How this Book is Structured</span></a>
   </div>
 </li>
@@ -239,7 +238,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#data-science-workflow" id="toc-data-science-workflow" class="nav-link active" data-scroll-target="#data-science-workflow">Data Science Workflow</a></li>
+  <li><a href="#mindmap-of-regression-analysis" id="toc-mindmap-of-regression-analysis" class="nav-link" data-scroll-target="#mindmap-of-regression-analysis">Mindmap of Regression Analysis</a></li>
+  <li><a href="#dictionary-of-terminology" id="toc-dictionary-of-terminology" class="nav-link" data-scroll-target="#dictionary-of-terminology">Dictionary of Terminology</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/alexrod61/ml-stats-common-ground/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -248,43 +249,61 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Machine Learning and Statistics: A Common Ground</h1>
+<h1 class="title">How this Book is Structured</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>G. Alexi Rodríguez-Arelis </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 27, 2023</p>
-    </div>
-  </div>
   
     
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    This book aims to set a common ground between Machine Learning and Statistics regarding regression techniques, using <code>Python</code> and <code>R</code>, under two perspectives: <em>inference</em> and <em>prediction</em>.
-  </div>
-</div>
 
 </header>
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>Throughout my journey as a postdoctoral fellow in the <a href="https://masterdatascience.ubc.ca/">Master of Data Science (MDS)</a> at the University of British Columbia, I became aware of the fascinating overlap between Machine Learning and Statistics. Many Data Science students usually come across common Machine Learning/Statistics concepts or ideas that might only differ in names. For instance, simple terms such as weights in supervised learning (and their equivalent statistical counterpart as regression coefficients) might be misleading for students starting their Data Science formation. On the other hand, from an instructor’s perspective in a Data Science program that subsets its courses in Machine Learning in <code>Python</code> and Statistics in <code>R</code>, regression courses in <code>R</code> also demand the inclusion of <code>Python</code>-related packages as alternative tools. In my MDS teaching experience, this is especially critical for students whose career plans lean towards industry where <code>Python</code> is more heavily used.</p>
-<p>As a Data Science educator, I view this field as a substantial synergy between Machine Learning and Statistics. Nevertheless, I believe there are still many gaps to be addressed between both disciplines. Thus, closing these critical gaps is imperative in a domain with accelerated growth, such as Data Science. The <a href="https://ubc-mds.github.io/resources_pages/terminology/">MDS Stat-ML dictionary</a> inspired me to write this book. It basically consists of common ground between foundational supervised learning models from Machine Learning and regression models commonly used in Statistics. I strive to explore common modelling approaches as a primary step while highlighting different terminology found in both fields. Furthermore, this discussion is not limited to a simple conceptual exploration. Hence, the second step is hands-on practice via the corresponding <code>Python</code> packages for Machine Learning and <code>R</code> for Statistics.</p>
+<p>This book is structured in three big pillars:</p>
+<ol type="1">
+<li>The use of an ordered <em>Data Science workflow</em>,</li>
+<li>the correct use of an <em>appropriate regression model</em> for supervised learning based on the outcome of interest, and</li>
+<li>a constant common ground in terminology between Statistics and Machine Learning via a <em>dictionary</em>. Each one of these three pillars is heavily connected since the same Data Science workflow is applied in each one of the regression models, which aims to help the reader in their learning (i.e., we would be able to know what exact stage to expect in our data analysis regardless of the regression model we are being exposed to).</li>
+</ol>
+<p>On the other hand, the dictionary will allow us to clarify any potential confusion between the two disciplines, Statistics and Machine Learning, in differences in terminology within supervised learning. As a side note, throughout the book, all statistical terms will be highlighted in <span style="color: purple;"><strong>purple</strong></span> whereas the common Machine Learning terms will be highlighted in <span style="color: blue;"><strong>blue</strong></span>. This colour scheme strives to combine this terminology so we can switch from one field to another in an easier way. With practice and time, the reader should be expected to jump back and forth when using these concepts.</p>
+<section id="data-science-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-workflow">Data Science Workflow</h2>
+<p>A crucial aspect of the practice of supervised learning is the need for a systematic Data Science workflow that will allow us to solve our respective inquiries in a transparent and reproducible way. Hence, <a href="intro.html"><span>Chapter&nbsp;1</span></a> begins with the general definition of supervised learning and its two critical paradigms: <em>inference</em> and <em>prediction</em>. Moreover, its workflow is fully explained across seven sequential phases:</p>
+<ol type="i">
+<li><strong>Design</strong>.</li>
+<li><strong>Data collection</strong>.</li>
+<li><strong>Exploratory data analysis</strong>.</li>
+<li><strong>Modelling</strong>.</li>
+<li><strong>Estimation</strong>.</li>
+<li><strong>Results</strong>.</li>
+<li><strong>Storytelling</strong>.</li>
+</ol>
+<p>Now, suppose we do not follow a predefined workflow in practice. In that case, we might be at risk of incorrectly addressing these inquiries, translating into meaningless results outside the context of the problem we aim to solve. This is why the formation of a Data Scientist must stress this workflow from the very introductory stages.</p>
+<p>On the other hand, even though this book has prerequisites related to the basics of probability via different distributions and the fundamentals of frequentist statistical inference, <a href="intro.html"><span>Chapter&nbsp;1</span></a> also provides a handy summary of all these topics. We will check essential concepts such as <em>random variables</em>, <em>sampling</em>, <em>parameter estimation via maximum likelihood</em>, the process of <em>hypothesis testing</em>, delivery of <em>confidence intervals</em>, and how to obtain <em>outcome predictions</em>. Note these concepts are heavily related to the Data Science workflow depicted in <a href="intro.html#sec-ds-workflow"><span>Section&nbsp;1.2</span></a> across its different phases.</p>
+</section>
+<section id="mindmap-of-regression-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="mindmap-of-regression-analysis">Mindmap of Regression Analysis</h2>
+<p>Having defined the necessary statistical aspects to execute a proper supervised learning analysis, either <em>inferential</em> or <em>predictive</em> across its seven sequential phases, we must dig into the different approaches we might encounter in practice as regression models. The nature of our outcome of interest will dictate any given modelling approach to apply, depicted as clouds in <a href="#fig-regression-mindmap">Figure&nbsp;<span>1</span></a>. Note these regression models can be split into two sets depending on whether the outcome of interest is <em>continuous</em> or <em>discrete</em>. Therefore, under a probabilistic view, identifying the nature of a given random variable is crucial in regression analysis.</p>
+<div id="fig-regression-mindmap" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://mermaid.live/edit#pako:eNqVVd9v2jAQ_lciP4FEOgolDdE0aaVTN2kr1VhfKl6u8REsJT56dugPxP8-J6SCAgHqp-R8933fnc_nhYhJoohEprTMYDbWnsdEtvEXE0ZjFGmvsHnedw3pq1GmufodkLZK55Sbr4_85dswtzFluNqLIhWTbkzAeBPwOU-Rq6hi3etHyrVEuTZ9DMCXeAo6QR9SuxFXrOaQpdLAryXpbwRj_dFTDk5qaVmrbqwDb0lrTMCqOdZRpqQTH5jpuSD1WSXTHeobyDLYYtnwuWOaEVtnrCOZIceoLSS4DX2F9gDyKOe5mkPq_VNZbQYxpKglsG-dk9kiWCzugCFDyypeLj_ulQLW26WMd8b6mq5QR5ip2WHkAb1slKaC_AlvwNJ4O9DXysSMFo_1lJ1uZHhVdkRdYaSK0bfPtFOSkVNuVkzXYGGv-quNZqNEGVsV6EBNXLf5J0JTpqqCHAcfuDtj63LMDfLumf94ypVUxrWdQXlYzCAFRxhXau5IGUP6WKbDOfKJ-LfV_Su9PmR-Kr5HXPrfu8lxKusNamRI1VvleGJeD8jk_9KTFOwxhl3XoxwD55oQF8WuO043IrZP89ZVTG9G7JlhroP8PG3ukfknT-3n2q1Yq1l7nJP2clbRn-B7X42deTGU0jRrnIv7tj9AtESGnIGS7n1bFOFjYafoJoqI3KfECbi6jMVYL50r5JZGrzoWkeUcWyKfSXdS1woSN99ENIHUOOsMtIgW4kVEficMzy4vgiDo94Ner93vXrTEq7OfBxdnl0Ev7AVhOwyCdrBsiTcih3F-1u2e98NOEIT9sNvudDstgVJZ4j-rR7h8i0uShzKgULL8DwFMR-8"><img src="https://mermaid.ink/img/pako:eNqVVd9v2jAQ_lciP4FEOgolDdE0aaVTN2kr1VhfKl6u8REsJT56dugPxP8-J6SCAgHqp-R8933fnc_nhYhJoohEprTMYDbWnsdEtvEXE0ZjFGmvsHnedw3pq1GmufodkLZK55Sbr4_85dswtzFluNqLIhWTbkzAeBPwOU-Rq6hi3etHyrVEuTZ9DMCXeAo6QR9SuxFXrOaQpdLAryXpbwRj_dFTDk5qaVmrbqwDb0lrTMCqOdZRpqQTH5jpuSD1WSXTHeobyDLYYtnwuWOaEVtnrCOZIceoLSS4DX2F9gDyKOe5mkPq_VNZbQYxpKglsG-dk9kiWCzugCFDyypeLj_ulQLW26WMd8b6mq5QR5ip2WHkAb1slKaC_AlvwNJ4O9DXysSMFo_1lJ1uZHhVdkRdYaSK0bfPtFOSkVNuVkzXYGGv-quNZqNEGVsV6EBNXLf5J0JTpqqCHAcfuDtj63LMDfLumf94ypVUxrWdQXlYzCAFRxhXau5IGUP6WKbDOfKJ-LfV_Su9PmR-Kr5HXPrfu8lxKusNamRI1VvleGJeD8jk_9KTFOwxhl3XoxwD55oQF8WuO043IrZP89ZVTG9G7JlhroP8PG3ukfknT-3n2q1Yq1l7nJP2clbRn-B7X42deTGU0jRrnIv7tj9AtESGnIGS7n1bFOFjYafoJoqI3KfECbi6jMVYL50r5JZGrzoWkeUcWyKfSXdS1woSN99ENIHUOOsMtIgW4kVEficMzy4vgiDo94Ner93vXrTEq7OfBxdnl0Ev7AVhOwyCdrBsiTcih3F-1u2e98NOEIT9sNvudDstgVJZ4j-rR7h8i0uShzKgULL8DwFMR-8?type=png.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1: Regression analysis mindmap depicting all modelling techniques to be explored in this book. These techniques are split into two big sets: <em>continuous</em> and <em>discrete</em> outcomes.</figcaption>
+</figure>
+</div>
+<p>As we can see in the clouds of <a href="#fig-regression-mindmap">Figure&nbsp;<span>1</span></a>, there are 13 regression models: 8 belonging to discrete outcomes and 5 to continuous outcomes. Each of these models is contained in a chapter of this book, beginning with the most basic regression tool known as ordinary least-squares in <a href="ols-regression.html"><span>Chapter&nbsp;2</span></a>. We must clarify that the current statistical literature is not restricted to these 13 regression models. The field of regression analysis is vast, and one might encounter more complex models to target certain specific inquiries. Nonetheless, I consider these models the fundamental regression approaches that any Data Scientist must be familiar with in everyday practice.</p>
+</section>
+<section id="dictionary-of-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="dictionary-of-terminology">Dictionary of Terminology</h2>
+<p>Finally, following the structure of the <a href="https://ubc-mds.github.io/resources_pages/terminology/">MDS Stat-ML dictionary</a>, the <a href="dictionary.html"><span>Appendix&nbsp;A</span></a> contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Statistics and Machine Learning when performing supervised learning in practice. Readers might be surprised that certain concepts refer to the same idea but with different terminology. Contrarily, in some other cases, the same terminology might refer to different concepts!</p>
 
 
 </section>
@@ -541,10 +560,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./audience-scope.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Audience and Scope</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./audience-scope.html" class="pagination-link">
-        <span class="nav-page-text">Audience and Scope</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./intro.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

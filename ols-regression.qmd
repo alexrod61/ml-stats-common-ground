@@ -1,0 +1,42 @@
+# Ordinary Least-Squares Regression {#sec-ols}
+
+```{r}
+#| echo: false
+tippy::tippy_this(elementId = "ols", tooltip = "Ordinary Least-Squares", animation = "scale")
+```
+
+This is a [OLS]{#ols}.
+
+```{r}
+1 + 1
+```
+
+$$
+\begin{equation}
+a = 3
+\end{equation}
+$$ {#eq-ols}
+
+```{r}
+#| label: read-data
+#| echo: true
+#| message: false
+#| cache: true
+lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')
+```
+
+```{r}
+#| label: wrangling
+#| echo: true
+#| message: false
+library(dplyr)
+library(knitr)
+lemur_data <- lemurs %>% 
+  filter(taxon == "ECOL",
+         sex == "M",
+         age_category == "adult") %>% 
+  select(c(age_at_wt_mo, weight_g)) %>% 
+  rename(Age = age_at_wt_mo, 
+         Weight = weight_g)
+kable(head(lemur_data))
+```
