@@ -18,7 +18,7 @@
     "href": "book-structure.html#data-science-workflow",
     "title": "How this Book is Structured",
     "section": "Data Science Workflow",
-    "text": "Data Science Workflow\nA crucial aspect of the practice of supervised learning is the need for a systematic Data Science workflow that will allow us to solve our respective inquiries in a transparent and reproducible way. Hence, Chapter 1 begins with the general definition of supervised learning and its two critical paradigms: inference and prediction. Moreover, its workflow is fully explained across seven sequential phases:\n\nDesign.\nData collection.\nExploratory data analysis.\nModelling.\nEstimation.\nResults.\nStorytelling.\n\nNow, suppose we do not follow a predefined workflow in practice. In that case, we might be at risk of incorrectly addressing these inquiries, translating into meaningless results outside the context of the problem we aim to solve. This is why the formation of a Data Scientist must stress this workflow from the very introductory stages.\nOn the other hand, even though this book has prerequisites related to the basics of probability via different distributions and the fundamentals of frequentist statistical inference, Chapter 1 also provides a handy summary of all these topics. We will check essential concepts such as random variables, sampling, parameter estimation via maximum likelihood, the process of hypothesis testing, delivery of confidence intervals, and how to obtain outcome predictions. Note these concepts are heavily related to the Data Science workflow depicted in Section 1.2 across its different phases."
+    "text": "Data Science Workflow\nA crucial aspect of the practice of supervised learning is the need for a systematic Data Science workflow that will allow us to solve our respective inquiries in a transparent and reproducible way. Hence, Chapter 1 begins with the general definition of supervised learning and its two critical paradigms: inference and prediction. Moreover, its workflow is fully explained across seven sequential phases:\n\nDesign.\nData collection.\nExploratory data analysis.\nModelling.\nEstimation.\nResults.\nStorytelling.\n\nNow, suppose we do not follow a predefined workflow in practice. In that case, we might be at risk of incorrectly addressing these inquiries, translating into meaningless results outside the context of the problem we aim to solve. This is why the formation of a Data Scientist must stress this workflow from the very introductory stages.\nOn the other hand, even though this book has prerequisites related to the basics of probability via different distributions and the fundamentals of frequentist statistical inference, Chapter 1 also provides a handy summary of all these topics. We will check essential concepts such as random variables, sampling, parameter estimation via maximum likelihood, the process of hypothesis testing, delivery of confidence intervals, and how to obtain outcome predictions. Note these concepts are heavily related to the Data Science workflow depicted in Section 1.5 across its different phases."
   },
   {
     "objectID": "book-structure.html#mindmap-of-regression-analysis",
@@ -32,28 +32,49 @@
     "href": "book-structure.html#dictionary-of-terminology",
     "title": "How this Book is Structured",
     "section": "Dictionary of Terminology",
-    "text": "Dictionary of Terminology\nFinally, following the structure of the MDS Stat-ML dictionary, the Appendix A contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Statistics and Machine Learning when performing supervised learning in practice. Readers might be surprised that certain concepts refer to the same idea but with different terminology. Contrarily, in some other cases, the same terminology might refer to different concepts!"
+    "text": "Dictionary of Terminology\nFinally, following the structure of the MDS Stat-ML dictionary, Appendix A contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Statistics and Machine Learning when performing supervised learning in practice. Readers might be surprised that certain concepts refer to the same idea but with different terminology. Contrarily, in some other cases, the same terminology might refer to different concepts!"
+  },
+  {
+    "objectID": "intro.html#sec-basics-prob",
+    "href": "intro.html#sec-basics-prob",
+    "title": "1  Introduction",
+    "section": "1.1 Basics of Probability",
+    "text": "1.1 Basics of Probability"
+  },
+  {
+    "objectID": "intro.html#sec-basics-inf",
+    "href": "intro.html#sec-basics-inf",
+    "title": "1  Introduction",
+    "section": "1.2 Basics of Frequentist Statistical Inference",
+    "text": "1.2 Basics of Frequentist Statistical Inference"
+  },
+  {
+    "objectID": "intro.html#sec-mle",
+    "href": "intro.html#sec-mle",
+    "title": "1  Introduction",
+    "section": "1.3 What is Maximum Likelihood Estimation?",
+    "text": "1.3 What is Maximum Likelihood Estimation?"
   },
   {
     "objectID": "intro.html#sec-sup-learning",
     "href": "intro.html#sec-sup-learning",
     "title": "1  Introduction",
-    "section": "1.1 What is Supervised Learning?",
-    "text": "1.1 What is Supervised Learning?"
+    "section": "1.4 What is Supervised Learning?",
+    "text": "1.4 What is Supervised Learning?"
   },
   {
     "objectID": "intro.html#sec-ds-workflow",
     "href": "intro.html#sec-ds-workflow",
     "title": "1  Introduction",
-    "section": "1.2 The Data Science Workflow in Supervised Learning",
-    "text": "1.2 The Data Science Workflow in Supervised Learning\n\n\n\n\n\n\n\nFigure 1.1: Data Science workflow for inferential and predictive inquiries in regression analysis and supervised learning, respectively.\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "section": "1.5 The Data Science Workflow in Supervised Learning",
+    "text": "1.5 The Data Science Workflow in Supervised Learning\nIt is time to review the so-called Data Science workflow\nFor further reference, you can see Figure 1.1\n\n\n\n\n\n\n\nFigure 1.1: Data Science workflow for inferential and predictive inquiries in regression analysis and supervised learning, respectively."
   },
   {
     "objectID": "ols-regression.html",
     "href": "ols-regression.html",
     "title": "2  Ordinary Least-Squares Regression",
     "section": "",
-    "text": "This is a OLS.\n\n1 + 1\n\n[1] 2\n\n\n\\[\n\\begin{equation}\na = 3\n\\end{equation}\n\\tag{2.1}\\]\n\nlemurs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')\n\n\nlibrary(dplyr)\nlibrary(knitr)\nlemur_data &lt;- lemurs %&gt;% \n  filter(taxon == \"ECOL\",\n         sex == \"M\",\n         age_category == \"adult\") %&gt;% \n  select(c(age_at_wt_mo, weight_g)) %&gt;% \n  rename(Age = age_at_wt_mo, \n         Weight = weight_g)\nkable(head(lemur_data))\n\n\n\nAge\nWeight\n\n\n\n129.90\n2805\n\n\n132.10\n3001\n\n\n140.32\n2429\n\n\n157.94\n2597\n\n\n164.58\n2497\n\n\n184.18\n2225"
+    "text": "This is a OLS.\n\n1 + 1\n\n[1] 2\n\n\n\\[\n\\begin{equation}\na = 3\n\\end{equation}\n\\tag{2.1}\\]\n\nlemurs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')\n\n\nlibrary(dplyr)\nlibrary(knitr)\nlemur_data &lt;- lemurs %&gt;% \n  filter(taxon == \"ECOL\",\n         sex == \"M\",\n         age_category == \"adult\") %&gt;% \n  select(c(age_at_wt_mo, weight_g)) %&gt;% \n  rename(Age = age_at_wt_mo, \n         Weight = weight_g)\nkable(head(lemur_data))\n\n\n\nAge\nWeight\n\n\n\n129.90\n2805\n\n\n132.10\n3001\n\n\n140.32\n2429\n\n\n157.94\n2597\n\n\n164.58\n2497\n\n\n184.18\n2225\n\n\n\n\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\npenguins |&gt;\n  mutate(\n    bill_ratio = bill_depth_mm / bill_length_mm,\n    bill_area  = bill_depth_mm * bill_length_mm\n  )\n\n1\n\nTake penguins, and then,\n\n2\n\nadd new columns for the bill ratio and bill area.\n\n\n\n\nR Code\nR Output\n\n\n\n\nhead(mtcars)\n\n\n\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1"
   },
   {
     "objectID": "binary-logistic-regression.html",
@@ -61,12 +82,5 @@
     "title": "3  Binary Logistic Regression",
     "section": "",
     "text": "We will proceed with the first generalized linear model (GLM), binary logistic regression.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]

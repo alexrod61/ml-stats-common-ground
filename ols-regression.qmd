@@ -40,3 +40,46 @@ lemur_data <- lemurs %>%
          Weight = weight_g)
 kable(head(lemur_data))
 ```
+
+
+
+---
+code-annotations: below
+---
+
+```r
+library(tidyverse)
+library(palmerpenguins)
+penguins |>                                      # <1>
+  mutate(                                        # <2>
+    bill_ratio = bill_depth_mm / bill_length_mm, # <2>
+    bill_area  = bill_depth_mm * bill_length_mm  # <2>
+  )                                              # <2>
+```
+1. Take `penguins`, and then,
+2. add new columns for the bill ratio and bill area.
+
+
+
+::: {.panel-tabset}
+
+## **`R` Code**
+
+```{r}
+#| echo: true
+#| eval: false
+head(mtcars)
+```
+
+
+## **`R` Output**
+
+```{r}
+#| eval: true
+#| echo: false
+head(mtcars)
+```
+
+:::
+
+
