@@ -1,1 +1,49 @@
-# Dictionary of Statistics and Machine Learning {#sec-dictionary}
+# Dictionary of Machine Learning and Statistics {#sec-dictionary}
+
+## D {.unnumbered}
+ 
+### <span style="color: purple;">Dependent variable</span> {.unnumbered}
+
+In supervised learning, it is the main variable of interest we are trying to *learn*, or equivalently, the variable we are trying to *predict* in a Machine Learning context or *explain* in a statistical inference framework.
+
+::: {.callout-important}
+## Equivalent to:
+
+<span style="color: blue;">**Outcome**</span>, <span style="color: blue;">**output**</span>, <span style="color: purple;">**response**</span> or <span style="color: blue;">**target**</span>.
+:::
+
+## O {.unnumbered}
+
+### <span style="color: blue;">Outcome</span> or <span style="color: blue;">Output</span> {.unnumbered}
+
+In supervised learning, it is the main variable of interest we are trying to *learn*, or equivalently, the variable we are trying to *predict* in a Machine Learning context or *explain* in a statistical inference framework.
+
+::: {.callout-important}
+## Equivalent to:
+
+<span style="color: purple;">**Dependent variable**</span>, <span style="color: blue;">**target**</span> or <span style="color: purple;">**response**</span>.
+:::
+
+## R {.unnumbered}
+
+### <span style="color: purple;">Response</span> {.unnumbered}
+
+In supervised learning, it is the main variable of interest we are trying to *learn*, or equivalently, the variable we are trying to *predict* in a Machine Learning context or *explain* in a statistical inference framework.
+
+::: {.callout-important}
+## Equivalent to:
+
+<span style="color: purple;">**Dependent variable**</span>, <span style="color: blue;">**outcome**</span>, <span style="color: blue;">**output**</span> or <span style="color: blue;">**target**</span>.
+:::
+
+## T {.unnumbered}
+
+### <span style="color: blue;">Target</span> {.unnumbered}
+
+In supervised learning, it is the main variable of interest we are trying to *learn*, or equivalently, the variable we are trying to *predict* in a Machine Learning context or *explain* in a statistical inference framework.
+
+::: {.callout-important}
+## Equivalent to:
+
+<span style="color: purple;">**Dependent variable**</span>, <span style="color: blue;">**outcome**</span>, <span style="color: blue;">**output**</span> or <span style="color: purple;">**response**</span>.
+:::

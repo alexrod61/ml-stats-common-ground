@@ -1,5 +1,7 @@
 # Introduction {#sec-intro}
 
+Even though this book comprises 13 chapters, each depicting a different regression model, we have split these chapters into two major subsets: those with *continuous* outcomes and those with *discrete* outcomes. Now, we might wonder: what does the term *outcome* implicate in a given model? Well, this term opens up the pathway to the first set of equivalent <span style="color: blue;">**ML**</span>/<span style="color: purple;">**Stats**</span> terms. In supervised learning, an <span style="color: blue;">**outcome**</span> (also known as <span style="color: blue;">**output**</span>, <span style="color: blue;">**target**</span>, <span style="color: purple;">**response**</span> or <span style="color: purple;">**dependent variable**</span>) is the main variable of interest we are trying to *learn*, or equivalently, the variable we are trying to *predict* in a Machine Learning context or *explain* in a statistical inference framework.
+
 ## Basics of Probability {#sec-basics-prob}
 
 ## Basics of Frequentist Statistical Inference {#sec-basics-inf}

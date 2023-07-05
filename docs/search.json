@@ -32,7 +32,7 @@
     "href": "book-structure.html#dictionary-of-terminology",
     "title": "How this Book is Structured",
     "section": "Dictionary of Terminology",
-    "text": "Dictionary of Terminology\nFinally, following the structure of the MDS Stat-ML dictionary, Appendix A contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Statistics and Machine Learning when performing supervised learning in practice. Note that terms will be coloured depending on their statistical or Machine Learning nature.\n\n\n\n\n\n\nHeads-up!\n\n\n\nReaders might be surprised that certain concepts refer to the same idea but with different terminology. Contrarily, in some other cases, the same terminology might refer to different concepts!"
+    "text": "Dictionary of Terminology\nFinally, following the structure of the MDS Stat-ML dictionary, Appendix A contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Machine Learning and Statistics (indicated as ML/Stats throughout the book) when performing supervised learning in practice. Note that terms will be coloured depending on their Machine Learning or statistical nature.\n\n\n\n\n\n\nHeads-up!\n\n\n\nReaders might be surprised that certain concepts refer to the same idea but with different terminology. Contrarily, in some other cases, the same terminology might refer to different concepts!"
   },
   {
     "objectID": "intro.html#sec-basics-prob",
@@ -82,5 +82,33 @@
     "title": "3  Binary Logistic Regression",
     "section": "",
     "text": "We will proceed with the first generalized linear model (GLM), binary logistic regression.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "dictionary.html#d",
+    "href": "dictionary.html#d",
+    "title": "Appendix A — Dictionary of Machine Learning and Statistics",
+    "section": "D",
+    "text": "D\n\nDependent variable\nIn supervised learning, it is the main variable of interest we are trying to learn, or equivalently, the variable we are trying to predict in a Machine Learning context or explain in a statistical inference framework.\n\n\n\n\n\n\nEquivalent to:\n\n\n\nOutcome, output, response or target."
+  },
+  {
+    "objectID": "dictionary.html#o",
+    "href": "dictionary.html#o",
+    "title": "Appendix A — Dictionary of Machine Learning and Statistics",
+    "section": "O",
+    "text": "O\n\nOutcome or Output\nIn supervised learning, it is the main variable of interest we are trying to learn, or equivalently, the variable we are trying to predict in a Machine Learning context or explain in a statistical inference framework.\n\n\n\n\n\n\nEquivalent to:\n\n\n\nDependent variable, target or response."
+  },
+  {
+    "objectID": "dictionary.html#r",
+    "href": "dictionary.html#r",
+    "title": "Appendix A — Dictionary of Machine Learning and Statistics",
+    "section": "R",
+    "text": "R\n\nResponse\nIn supervised learning, it is the main variable of interest we are trying to learn, or equivalently, the variable we are trying to predict in a Machine Learning context or explain in a statistical inference framework.\n\n\n\n\n\n\nEquivalent to:\n\n\n\nDependent variable, outcome, output or target."
+  },
+  {
+    "objectID": "dictionary.html#t",
+    "href": "dictionary.html#t",
+    "title": "Appendix A — Dictionary of Machine Learning and Statistics",
+    "section": "T",
+    "text": "T\n\nTarget\nIn supervised learning, it is the main variable of interest we are trying to learn, or equivalently, the variable we are trying to predict in a Machine Learning context or explain in a statistical inference framework.\n\n\n\n\n\n\nEquivalent to:\n\n\n\nDependent variable, outcome, output or response."
   }
 ]

@@ -39,17 +39,11 @@ As we can see in the clouds of @fig-regression-mindmap, there are 13 regression 
 
 ## Dictionary of Terminology
 
-Finally, following the structure of the [MDS Stat-ML dictionary](https://ubc-mds.github.io/resources_pages/terminology/), @sec-dictionary contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Statistics and Machine Learning when performing supervised learning in practice. Note that terms will be coloured depending on their <span style="color: purple;">**statistical**</span> or <span style="color: blue;">**Machine Learning**</span> nature.
+Finally, following the structure of the [MDS Stat-ML dictionary](https://ubc-mds.github.io/resources_pages/terminology/), @sec-dictionary contains a dictionary that follows the same format which contrasts the terminology a Data Scientist can find in Machine Learning and Statistics (indicated as <span style="color: blue;">**ML**</span>/<span style="color: purple;">**Stats**</span> throughout the book) when performing supervised learning in practice. Note that terms will be coloured depending on their <span style="color: blue;">**Machine Learning**</span> or <span style="color: purple;">**statistical**</span> nature.
 
 ::: {.callout-tip appearance="simple"}
 
 ## Heads-up!
 
 Readers might be surprised that certain concepts refer to the same idea but with different terminology. Contrarily, in some other cases, the same terminology might refer to different concepts! 
-
 :::
-
-
-
-
-
